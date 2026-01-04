@@ -1,5 +1,15 @@
 import logo from './logo.svg';
 import './App.scss';
+import MyComponent from './Example/MyComponent';
+
+/**
+ * 2 components: class component / function component (function, arrow)
+ *  function: function name() {}
+ *  arrow: const name = () => {}
+ * 
+ * Component là một class hay function có chức năng đặc biệt là render HTML, sử dụng JSX (JavaScript XML)
+ * JSX: function của javascript trả về html, code html trong javascript
+ * */
 
 function App() {
   return (
@@ -17,6 +27,7 @@ function App() {
         >
           Learn React
         </a>
+        <MyComponent />
       </header>
     </div>
   );
