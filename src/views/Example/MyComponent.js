@@ -1,5 +1,7 @@
 import React from 'react';
+import ChildComponent from './ChildComponent';
 
+// Nesting Components: Trong component có thể lồng components
 class MyComponent extends React.Component {
 
     // Key: value
@@ -63,6 +65,10 @@ class MyComponent extends React.Component {
                         onClick={(event) => this.handleSubmit(event)}
                     ></input>
                 </form >
+
+                <ChildComponent name={"Child 1"} />
+                <ChildComponent name={"Child 2"} />
+                <ChildComponent name={"Child 3"} />
             </>
         )
     }
