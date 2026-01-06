@@ -66,9 +66,7 @@ class MyComponent extends React.Component {
                     ></input>
                 </form >
 
-                <ChildComponent name={"Child 1"} />
-                <ChildComponent name={"Child 2"} />
-                <ChildComponent name={"Child 3"} />
+                <ChildComponent name={'Jun'} age={'25'} />
             </>
         )
     }
