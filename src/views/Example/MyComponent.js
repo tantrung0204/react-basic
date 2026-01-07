@@ -8,7 +8,12 @@ class MyComponent extends React.Component {
     // state nó là 1 object
     state = {
         firstName: "",
-        lastName: ""
+        lastName: "",
+        arrJobs: [
+            { id: 'abcJob1', title: 'Developers', salary: '500$' },
+            { id: 'abcJob2', title: 'Testers', salary: '400$' },
+            { id: 'abcJob3', title: 'Project Managers', salary: '1000$' },
+        ]
     }
 
     handleOnChangeName = (event) => {
@@ -66,7 +71,12 @@ class MyComponent extends React.Component {
                     ></input>
                 </form >
 
-                <ChildComponent name={'Jun'} age={'25'} />
+                <ChildComponent
+                    name={this.state.firstName}
+                    age={'20'}
+                    address={'Can Tho'}
+                    arrJobs={this.state.arrJobs}
+                />
             </>
         )
     }
