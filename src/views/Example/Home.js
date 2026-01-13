@@ -1,7 +1,11 @@
 import React from "react";
+import Color from "../HOC/Color";
 
 class Home extends React.Component {
+
+
     render() {
+
         return (
             <div>
                 Hello world from homepage with Jun Nguyen
@@ -10,4 +14,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default Color(Home);
