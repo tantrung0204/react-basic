@@ -13,6 +13,7 @@ import {
   Navigate
 } from "react-router-dom"
 import ListUser from './Users/ListUser';
+import DetailUser from './Users/DetailUser';
 
 /**
  * 2 components: class component / function component (function, arrow)
@@ -40,6 +41,7 @@ function App() {
             <Route path='/todos' element={<ListTodo />} />
             <Route path='/about' element={<MyComponent />} />
             <Route path='/user' element={<ListUser />} />
+            <Route path='/user/:id' element={<DetailUser />} />
           </Routes>
         </header>
 
