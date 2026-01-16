@@ -13,7 +13,7 @@ class Home extends React.Component {
                     Hello world from homepage with Jun Nguyen
                 </div>
                 <div>
-                    <img src={logo} />
+                    <img src={logo} style={{ width: '400px', height: '400px', margin: '10px' }} />
                 </div>
             </>
         )
